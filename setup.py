@@ -1,25 +1,12 @@
-import os
-from setuptools import setup
-  
-README = open(os.path.join(os.path.dirname(__file__), 'README.rst')).read()
-os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
- 
+from distutils.core import setup
+
 setup(
-    name = 'avtobazar_classifier',
-    version = '0.1',
-    description = 'GA simple Django app for avtobazar Classifier',
-    url = '',
-    packages = ['reputation', 'reputation.templatetags'],
-    classifiers =[
-        'Environment :: Web Environment',
-        'Framework :: Django',
-        'Intended Audience :: Developers',
-        'License :: OSI Approved :: BSD License',
-        'Operating System :: OS Independent',
-        'Programming Language :: Python',
-        'Programming Language :: Python :: 2.6',
-        'Programming Language :: Python :: 2.7',
-        'Topic :: Internet :: WWW/HTTP',
-        'Topic :: Internet :: WWW/HTTP :: Dynamic Content'
-    ],
+    name='avtobazar_classifier',
+    version='0.1',
+    packages=['classifier', 'classifier.management', 'classifier.management.commands', 'classifier.migrations'],
+    url='',
+    license='',
+    author='Dr.bleedjent',
+    author_email='dr.bleedjent',
+    description=''
 )
