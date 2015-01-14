@@ -1,7 +1,7 @@
 from distutils.core import setup
 
 setup(
-    name='avtobazar_classifier',
+    name='avtobazar-classifier',
     version='0.1',
     packages=['classifier', 'classifier.management', 'classifier.management.commands', 'classifier.migrations'],
     url='',
