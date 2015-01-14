@@ -1,21 +1,15 @@
 import os
 from setuptools import setup
-from setuptools import find_packages
- 
+  
 README = open(os.path.join(os.path.dirname(__file__), 'README.rst')).read()
 os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
  
 setup(
     name = 'avtobazar_classifier',
     version = '0.1',
-    packages = ['classifier'],
-    include_package_data = True,
-    license = 'BSD License',
-    description = 'A simple Django app for avtobazar Classifier',
-    long_description = README,
+    description = 'GA simple Django app for avtobazar Classifier',
     url = '',
-    author = 'Yura Revutskiy',
-    author_email = 'dr.bleedjent@gmail.com',
+    packages = ['reputation', 'reputation.templatetags'],
     classifiers =[
         'Environment :: Web Environment',
         'Framework :: Django',
@@ -28,6 +22,4 @@ setup(
         'Topic :: Internet :: WWW/HTTP',
         'Topic :: Internet :: WWW/HTTP :: Dynamic Content'
     ],
-    packages=find_packages(),
-    zip_safe=False,
 )
