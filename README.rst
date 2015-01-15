@@ -12,7 +12,3 @@ Quick start
     ...
     'classifier'
   }
-
-22. Run `python manage.py syncdb` to create myblog's models.
-
-
